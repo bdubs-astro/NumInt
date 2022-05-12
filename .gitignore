@@ -1,0 +1,7 @@
+# ignore all asv files ...
+*.asv
+
+# ignore all MS Office docs ...
+#*.docx
+#*.xlsx
+#*.pptx
