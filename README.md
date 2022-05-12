@@ -17,11 +17,31 @@ If the spacing between the data points is not constant, the formula generalizes 
 
 <img src = "./files for README/definition w_unequal spacing.png" width = "500"/>
 
+__Sample output:__
+
+<img src = "./files for README/sample_from_MATLAB.png" width = "800"/>  
+
+<br>
+<br>
+
+__Test code:__
+
+<img src = "./files for README/sine_integral.png" width = "200"/>
+
+```
+for N = logspace(1, 4, 4)
+    x = pi*linspace(0, 1, N);
+    y = sin(x);
+    fprintf('N = %-6d \tTrapz = %.6f\n', N, trapz(x, y))
+end
+```
+```
+N = 10     	Trapz = 1.979651
+N = 100    	Trapz = 1.999832
+N = 1000   	Trapz = 1.999998
+N = 10000  	Trapz = 2.000000
+```
 
 **Resources:**
 
 https://www.mathworks.com/help/matlab/ref/trapz.html
-
-__Sample output:__
-
-<img src = "./files for README/sample_from_MATLAB.png" width = "800"/>
