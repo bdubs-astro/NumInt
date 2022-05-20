@@ -55,8 +55,8 @@ else
 end
 
 %% truncate data
-xInt = x(x >= lowerLim & x <= upperLim);
-yInt = y(x >= lowerLim & x <= upperLim);
+xInt = xRaw(xRaw >= lowerLim & xRaw <= upperLim);
+yInt = yRaw(xRaw >= lowerLim & xRaw <= upperLim);
 
 %% calculate
 mySum = dx*sum(yInt);
@@ -74,7 +74,7 @@ fprintf('\tTrapz(x) = %f\n', trapz(xInt, yInt))   % MATLAB function, corrects fo
 %% plot results
 figure(399); clf; set(399,'Name','Numerical Integration');
 ax = gca;
-plot(x,y)
+plot(xRaw,yRaw)
 ylim auto
 hold on
 hh = plot([lowerLim,lowerLim],[ax.YLim(1),ax.YLim(2)],[upperLim,upperLim],[ax.YLim(1),ax.YLim(2)]); 
