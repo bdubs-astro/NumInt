@@ -4,7 +4,7 @@ Compares the results of the __trapezoid method__ with a simple summation.
 
 <img src = "./files for README/trapz_doc_from_MATLAB - Copy.png" width = "700"/>
 
-For ___N+1___ evenly spaced data points, the definite integral can be approximated by:
+For ___N+1___ evenly spaced data points (_i.e._, ___N___ equal segments), the definite integral can be approximated by:
 
 <img src = "./files for README/definition.png" width = "450"/>
 
