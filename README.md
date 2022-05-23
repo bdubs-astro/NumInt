@@ -2,7 +2,7 @@
 
 Compares the results of the __trapezoid method__ with a simple summation.
 
-<img src = "./files for README/trapz_doc_from_MATLAB - Copy.png" width = "700"/>
+<img src = "./files for README/illustration OSU.png" width = "500"/>
 
 For ___N+1___ evenly spaced data points (_i.e._, ___N___ equal segments), the definite integral can be approximated by:
 
@@ -28,6 +28,8 @@ __Test code:__
 
 <img src = "./files for README/sine_integral.png" width = "200"/>
 
+<img src = "./files for README/trapz_doc_from_MATLAB - Copy.png" width = "700"/>
+
 ```
 for N = logspace(1, 4, 4)
     x = pi*linspace(0, 1, N);
@@ -45,3 +47,5 @@ N = 10000  	Trapz = 2.000000
 **Resources:**
 
 https://www.mathworks.com/help/matlab/ref/trapz.html
+
+https://web.engr.oregonstate.edu/~webbky/MAE4020_5020_files/Section%208%20Integration.pdf
