@@ -82,5 +82,5 @@ hold on
 hh = plot([lowerLim,lowerLim],[ax.YLim(1),ax.YLim(2)],[upperLim,upperLim],[ax.YLim(1),ax.YLim(2)]); 
 hh(1).LineStyle = '--';  hh(1).LineWidth = 1.0;  hh(1).Color = 'r';
 hh(2).LineStyle = '--';  hh(2).LineWidth = 1.0;  hh(2).Color = 'r';
-title(sprintf('limits: %0.2f - %0.2f, dx = %0.2f, Sum*dx = %.6G, Trapz = %.6G', min(xInt), max(xInt), dx, mySum, myTrap))
+title(sprintf('limits: %0.2f - %0.2f, dx = %0.2f, Sum*dx = %.6G, Trapz = %.6G', lowerLim, upperLim, dx, mySum, myTrap))
 plotbrowser 'on'
