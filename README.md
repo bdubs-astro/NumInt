@@ -32,14 +32,14 @@ __Test code:__
 
 ```
 for N = logspace(1, 4, 4)
-    x = pi*linspace(0, 1, N);
+    x = pi*linspace(0, 1, N+1);
     y = sin(x);
     fprintf('N = %-6d \tTrapz = %.6f\n', N, trapz(x, y))
 end
 ```
 ```
-N = 10     	Trapz = 1.979651
-N = 100    	Trapz = 1.999832
+N = 10     	Trapz = 1.983524
+N = 100    	Trapz = 1.999836
 N = 1000   	Trapz = 1.999998
 N = 10000  	Trapz = 2.000000
 ```
